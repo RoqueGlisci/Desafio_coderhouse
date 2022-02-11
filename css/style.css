@@ -51,8 +51,8 @@ ul{
     font-family: 'Mochiy Pop P One', sans-serif;
     border-bottom: 10px solid black;
     list-style:none;
+    
 }
-
 
 
 a{
@@ -132,7 +132,41 @@ footer{
     background-color: #148DD9;
 }
 
+.footer_ani{
+    background-color: #148DD9;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-duration: alternate;
+}
+@keyframes un_efecto{
+    0%{
+        background-color: #148DD9;
+    }
+    25%{
+        background-color: #F20F38;
+    }
+    50%{
+        background-color: #F2E30F;
+    }
+    75%{
+        background-color: #04BFAD;
+    }
+    100%{
+        background-color: #148DD9;
+    }
+}
 
+.menu_ani{
+    transition: all 1s;
+    
+}
+.menu_ani:hover{
+    border: solid 2px;
+    padding: 15px 15px 15px 15px;
+    background-color: #F20F38;
+}
 
 /* -------------------------------------- */
 
@@ -140,6 +174,7 @@ img{
     max-width: 100%;
     max-height: 100%;
 }
+
 
 iframe{
     max-width: 100%;
@@ -211,7 +246,21 @@ img{
         display: flex;
         flex-direction: row;
     }
+
 }
+
+.ani{
+    height: 15rem;
+    width: 30rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: height 2s width 2s;
+    transition: all 2s;
+}
+.ani:hover{
+    height: 16rem;
+    width: 40rem;
+} 
+
 
 
 /* ---------------------Noticias------------------------- */
